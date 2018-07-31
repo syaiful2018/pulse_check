@@ -843,7 +843,8 @@
         var radarData = {
         labels: ["<?php echo $dirJKTDC[0]->Unit; ?>", 
                  "<?php echo $dirJKTDC[1]->Unit; ?>", 
-                 "<?php echo $dirJKTDC[2]->Unit; ?>"],
+                  "<?php echo $dirJKTDC[2]->Unit; ?>", 
+                 "<?php echo $dirJKTDC[3]->Unit; ?>"],
         datasets: [
             {
                 label: "My First dataset",
@@ -855,7 +856,8 @@
                 pointHighlightStroke: "rgba(151,187,205,1)",
                 data: [<?php echo $dirJKTDC[0]->bukti; ?>,
                        <?php echo $dirJKTDC[1]->bukti; ?>,
-                       <?php echo $dirJKTDC[2]->bukti; ?>]
+                       <?php echo $dirJKTDC[2]->bukti; ?>,
+                       <?php echo $dirJKTDC[3]->bukti; ?>]
             }
         ]
     };

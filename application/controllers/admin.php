@@ -6,7 +6,7 @@ class admin extends CI_Controller
 	{
 		parent::__construct();
 		
-		$this->load->model('model_users');
+		$this->load->model('model_users2');
 	}
 	public function index()
 	{		

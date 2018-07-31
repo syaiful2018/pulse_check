@@ -135,7 +135,9 @@ class model_users extends CI_Model {
  		$query = $this->db->query("
  			SELECT 'JKTCC'  as Unit, COUNT(bukti) as bukti FROM evidence WHERE unit = 'JKTCC' UNION 
  			SELECT 'JKTCG'  as Unit, COUNT(bukti) as bukti FROM evidence WHERE unit = 'JKTCG' UNION 
+ 			SELECT 'JKTMQ'  as Unit, COUNT(bukti) as bukti FROM evidence WHERE unit = 'JKTMQ' UNION 
  			SELECT 'JKTCI'  as Unit, COUNT(bukti) as bukti FROM evidence WHERE unit = 'JKTCI' ");
+
 		if($query->num_rows() > 0) 
 			{
 				return $query->result();
